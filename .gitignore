@@ -1,0 +1,12 @@
+# misc
+.idea
+.DS_Store
+
+# dependencies
+/node_modules
+
+# npm
+/package-lock.json
+
+# TypeScript
+/dist
