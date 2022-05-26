@@ -1,2 +1,2 @@
-export * from './deserializer';
+export * from './decoder';
 export * from './types';
