@@ -112,9 +112,9 @@ When retrieving the value of a key from a key/value pair, the value is typed acc
 | float            | [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#number_type)    |
 | boolean          | [Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#boolean_type)  |
 | offset date-time | [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)    |
-| local date-time  | [LocalDateTime](https://github.com/huan231/toml-nodejs/blob/master/src/types/local-date-time.ts) |
-| local date       | [LocalDate](https://github.com/huan231/toml-nodejs/blob/master/src/types/local-date.ts)          |
-| local time       | [LocalTime](https://github.com/huan231/toml-nodejs/blob/master/src/types/local-time.ts)          |
+| local date-time  | [LocalDateTime](https://github.com/huan231/toml-nodejs/blob/v0.1.0/src/types/local-date-time.ts) |
+| local date       | [LocalDate](https://github.com/huan231/toml-nodejs/blob/v0.1.0/src/types/local-date.ts)          |
+| local time       | [LocalTime](https://github.com/huan231/toml-nodejs/blob/v0.1.0/src/types/local-time.ts)          |
 | array            | [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)  |
 | inline table     | [Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#objects)        |
 
