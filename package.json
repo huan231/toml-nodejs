@@ -1,6 +1,7 @@
 {
   "name": "toml-nodejs",
   "private": true,
+  "description": "A TOML decoding library for Node.js",
   "homepage": "https://github.com/huan231/toml-nodejs#readme",
   "bugs": "https://github.com/huan231/toml-nodejs/issues",
   "repository": {
