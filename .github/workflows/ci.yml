@@ -30,3 +30,4 @@ jobs:
             ${{ runner.os }}-node-
       - run: npm install --ignore-scripts
       - run: npm run lint
+      - run: npm run build
