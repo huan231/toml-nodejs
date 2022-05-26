@@ -19,7 +19,8 @@
     "dist"
   ],
   "scripts": {
-    "build": "rm -rf dist && tsc"
+    "build": "rm -rf dist && tsc",
+    "lint": "eslint . --report-unused-disable-directives --ext .cjs,.ts --max-warnings 0"
   },
   "devDependencies": {
     "@types/node": "^16.11.33",
