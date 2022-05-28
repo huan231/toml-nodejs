@@ -117,6 +117,10 @@ export class LocalTime {
   }
 
   static fromString(value: string) {
+    if (!/^\d{2}:\d{2}:\d{2}(\.\d+)?$/.test(value)) {
+      throw new TOMLError(`invalid local time format "${value}"`);
+    }
+
     const components = value.split(':');
 
     const [hour, minute] = components.slice(0, 2).map((component) => parseInt(component, 10));
