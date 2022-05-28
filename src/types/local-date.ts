@@ -51,6 +51,10 @@ export class LocalDate {
   private constructor(readonly year: number, readonly month: Month, readonly day: Day) {}
 
   static fromString(value: string) {
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(value)) {
+      throw new TOMLError(`invalid local date format "${value}"`);
+    }
+
     const [year, month, day] = value.split('-').map((component) => parseInt(component, 10));
 
     if (!isYear(year) || !isMonth(month) || !isDay(day)) {
