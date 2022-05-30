@@ -96,8 +96,28 @@ const parseInteger = (
   return { int, unparsed };
 };
 
+// Arbitrary 64-bit signed integers (from −2^63 to 2^63−1) should be accepted and handled losslessly.
+//
+// https://toml.io/en/v1.0.0#integer
+const MAX_INTEGER = 2n ** (64n - 1n) - 1n;
+
 const parseBigInt = (value: string, radix: 10 | 16 | 8 | 2) => {
-  return BigInt(`${RADIX_PREFIXES[radix]}${value}`);
+  let int: bigint;
+
+  try {
+    int = BigInt(`${RADIX_PREFIXES[radix]}${value}`);
+  } catch {
+    throw new TOMLError();
+  }
+
+  // If an integer cannot be represented losslessly, an error must be thrown.
+  //
+  // https://toml.io/en/v1.0.0#integer
+  if (int > MAX_INTEGER) {
+    throw new TOMLError();
+  }
+
+  return int;
 };
 
 const parseDate = (value: string) => {
