@@ -1,14 +1,8 @@
-import { createHash } from 'crypto';
-
 import { ArrayTableNode, KeyNode, KeyValuePairNode, TableNode } from './ast';
 import { TOMLError } from './errors';
 
-const md5 = (input: string) => {
-  return createHash('md5').update(input).digest('hex');
-};
-
 const makeKeyComponents = (keyNode: KeyNode) => {
-  return keyNode.keys.map((key) => md5(key.value));
+  return keyNode.keys.map((key) => key.value);
 };
 
 const makeKey = (keyNode: KeyNode) => {
