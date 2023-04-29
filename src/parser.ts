@@ -1,6 +1,6 @@
 import { Tokenizer } from './tokenizer';
 import { TOMLError } from './errors';
-import {
+import type {
   ArrayNode,
   ArrayTableNode,
   BooleanNode,

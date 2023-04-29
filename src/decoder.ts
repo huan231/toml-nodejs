@@ -1,5 +1,5 @@
 import { Parser } from './parser';
-import { normalize, Value } from './normalizer';
+import { normalize, type Value } from './normalizer';
 
 export const decode = <T extends Record<string, Value>>(input: string): T => {
   const parser = new Parser(input);

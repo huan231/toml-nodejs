@@ -1,4 +1,4 @@
-import { ArrayTableNode, KeyNode, KeyValuePairNode, TableNode } from './ast';
+import type { ArrayTableNode, KeyNode, KeyValuePairNode, TableNode } from './ast';
 import { TOMLError } from './errors';
 
 const makeKeyComponents = (keyNode: KeyNode) => {
