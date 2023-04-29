@@ -4,7 +4,7 @@
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "lib": [
-      "es2021"
+      "es2023"
     ],
     "module": "es2022",
     "moduleResolution": "node",
@@ -12,7 +12,8 @@
     "skipLibCheck": true,
     "sourceMap": true,
     "strict": true,
-    "target": "es2021"
+    "target": "es2022",
+    "verbatimModuleSyntax": true
   },
   "include": ["./src"]
 }

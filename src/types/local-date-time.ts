@@ -1,5 +1,5 @@
-import { Day, LocalDate, Month } from './local-date';
-import { Hour, LocalTime, Minute, Second } from './local-time';
+import { type Day, LocalDate, type Month } from './local-date';
+import { type Hour, LocalTime, type Minute, type Second } from './local-time';
 import { TOMLError } from '../errors';
 
 export class LocalDateTime {
