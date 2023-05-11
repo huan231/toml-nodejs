@@ -283,7 +283,7 @@ export class Tokenizer {
       // Control characters other than tab (U+0000 to U+0008, U+000A to U+001F, U+007F) are not permitted in comments.
       //
       // https://toml.io/en/v1.0.0#comment
-      if (isUnicodeCharacter(char) && !isControlCharacterOtherThanTab(char)) {
+      if (!isControlCharacterOtherThanTab(char)) {
         this.iterator.next();
 
         continue;
@@ -353,7 +353,7 @@ export class Tokenizer {
         case undefined:
           throw new TOMLError();
         default:
-          if (!isUnicodeCharacter(char) || isControlCharacterOtherThanTab(char)) {
+          if (isControlCharacterOtherThanTab(char)) {
             throw new TOMLError();
           }
 
