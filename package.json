@@ -1,6 +1,6 @@
 {
   "name": "toml-nodejs",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "A TOML decoding library for Node.js",
   "homepage": "https://github.com/huan231/toml-nodejs#readme",
   "bugs": "https://github.com/huan231/toml-nodejs/issues",
