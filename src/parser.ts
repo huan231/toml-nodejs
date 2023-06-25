@@ -1,5 +1,5 @@
-import { Tokenizer } from './tokenizer';
-import { TOMLError } from './errors';
+import { Tokenizer } from './tokenizer.js';
+import { TOMLError } from './errors.js';
 import type {
   ArrayNode,
   ArrayTableNode,
@@ -16,10 +16,10 @@ import type {
   RootTableNode,
   TableNode,
   ValueNode,
-} from './ast';
-import { LocalDate, LocalDateTime, LocalTime } from './types';
-import { isBinary, isDecimal, isHexadecimal, isOctal } from './utils';
-import { Keystore } from './keystore';
+} from './ast.js';
+import { LocalDate, LocalDateTime, LocalTime } from './types.js';
+import { isBinary, isDecimal, isHexadecimal, isOctal } from './utils.js';
+import { Keystore } from './keystore.js';
 
 const DIGIT_CHECKS = {
   [10]: isDecimal,

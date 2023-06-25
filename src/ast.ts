@@ -1,4 +1,4 @@
-import { LocalDate, LocalDateTime, LocalTime } from './types';
+import { LocalDate, LocalDateTime, LocalTime } from './types.js';
 
 export interface RootTableNode {
   type: 'ROOT_TABLE';

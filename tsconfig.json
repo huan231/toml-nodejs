@@ -7,7 +7,7 @@
       "es2023"
     ],
     "module": "es2022",
-    "moduleResolution": "node",
+    "moduleResolution": "nodenext",
     "outDir": "./dist",
     "skipLibCheck": true,
     "sourceMap": true,

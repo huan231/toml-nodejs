@@ -9,6 +9,8 @@ module.exports = {
   ],
   plugins: ['@typescript-eslint', 'import', 'prettier'],
   rules: {
+    'import/no-default-export': 'error',
+    'import/no-unresolved': 'off',
     'import/order': [
       'error',
       {
@@ -16,7 +18,6 @@ module.exports = {
         'newlines-between': 'always',
       },
     ],
-    'import/no-default-export': 'error',
   },
   overrides: [
     {
