@@ -1,5 +1,5 @@
-import { TOMLError } from './errors';
-import { isHexadecimal } from './utils';
+import { TOMLError } from './errors.js';
+import { isHexadecimal } from './utils.js';
 
 interface BaseToken<T extends string> {
   type: T;

@@ -16,9 +16,9 @@ import type {
   RootTableNode,
   StringNode,
   TableNode,
-} from './ast';
-import { LocalDate, LocalDateTime, LocalTime } from './types';
-import { TOMLError } from './errors';
+} from './ast.js';
+import { LocalDate, LocalDateTime, LocalTime } from './types.js';
+import { TOMLError } from './errors.js';
 
 export type Value =
   | string

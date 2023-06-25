@@ -1,5 +1,5 @@
-import type { ArrayTableNode, KeyNode, KeyValuePairNode, TableNode } from './ast';
-import { TOMLError } from './errors';
+import type { ArrayTableNode, KeyNode, KeyValuePairNode, TableNode } from './ast.js';
+import { TOMLError } from './errors.js';
 
 const makeKeyComponents = (keyNode: KeyNode) => {
   return keyNode.keys.map((key) => key.value);
